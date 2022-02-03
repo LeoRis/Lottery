@@ -14,7 +14,7 @@ namespace Win_The_Lottery
             string input = Console.ReadLine();
 
             Algorithms permutationAlgorithm = new Algorithms();
-            permutationAlgorithm.InputSet = permutationAlgorithm.MakeCharArray(input);
+            permutationAlgorithm.InputSet = permutationAlgorithm.CreateCharArray(input);
 
             permutationAlgorithm.Recursion(0);
             Console.Write("Number of Permutations: " + permutationAlgorithm.PermutationCount);

@@ -15,7 +15,7 @@ namespace Win_The_Lottery
         public char[] InputSet { get; set; }
 
         public int PermutationCount { get; set; }
-        public char[] MakeCharArray(string InputString)
+        public char[] CreateCharArray(string InputString)
         {
             char[] charString = InputString.ToCharArray();
             Array.Resize(ref permutationValue, charString.Length);
