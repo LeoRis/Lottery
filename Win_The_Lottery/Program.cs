@@ -13,11 +13,11 @@ namespace Win_The_Lottery
             Console.Write("Please enter the desired characters:");
             string input = Console.ReadLine();
 
-            Algorithms permAlgorithm = new Algorithms();
-            permAlgorithm.InputSet = permAlgorithm.MakeCharArray(input);
+            Algorithms permutationAlgorithm = new Algorithms();
+            permutationAlgorithm.InputSet = permutationAlgorithm.MakeCharArray(input);
 
-            permAlgorithm.Recursion(0);
-            Console.Write("# of Permutations: " + permAlgorithm.PermutationCount);
+            permutationAlgorithm.Recursion(0);
+            Console.Write("Number of Permutations: " + permutationAlgorithm.PermutationCount);
 
             Console.ReadKey();
         }

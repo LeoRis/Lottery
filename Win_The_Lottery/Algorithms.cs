@@ -12,20 +12,9 @@ namespace Win_The_Lottery
         private int numberOfElements;
         private int[] permutationValue = new int[0];
 
-        private char[] inputSet;
-        public char[] InputSet
-        {
-            get { return inputSet; }
-            set { inputSet = value; }
-        }
+        public char[] InputSet { get; set; }
 
-        private int permutationCount = 0;
-        public int PermutationCount
-        {
-            get { return permutationCount; }
-            set { permutationCount = value; }
-        }
-
+        public int PermutationCount { get; set; }
         public char[] MakeCharArray(string InputString)
         {
             char[] charString = InputString.ToCharArray();
@@ -59,7 +48,7 @@ namespace Win_The_Lottery
         {
             foreach (int i in value)
             {
-                Console.Write(inputSet.GetValue(i - 1));
+                Console.Write(InputSet.GetValue(i - 1));
             }
             Console.WriteLine();
             PermutationCount++;
